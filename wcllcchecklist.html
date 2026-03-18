@@ -8,40 +8,40 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f5f5f5;
-    color: #111;
+    background: #0a0a0a;
+    color: #e8e8e0;
     font-size: 15px;
     line-height: 1.5;
     padding: 40px 20px 80px;
   }
   .container { max-width: 780px; margin: 0 auto; }
-  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.3px; }
-  .subtitle { font-size: 13px; color: #888; margin-bottom: 32px; }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.3px; color: #e8e8e0; }
+  .subtitle { font-size: 13px; color: #555; margin-bottom: 32px; }
   .progress-row { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
-  .progress-bar { flex: 1; height: 6px; background: #ddd; border-radius: 3px; overflow: hidden; }
-  .progress-fill { height: 100%; background: #111; border-radius: 3px; transition: width 0.3s ease; }
-  .progress-label { font-size: 12px; color: #888; white-space: nowrap; min-width: 60px; text-align: right; }
+  .progress-bar { flex: 1; height: 6px; background: #222; border-radius: 3px; overflow: hidden; }
+  .progress-fill { height: 100%; background: #c8ff00; border-radius: 3px; transition: width 0.3s ease; }
+  .progress-label { font-size: 12px; color: #555; white-space: nowrap; min-width: 60px; text-align: right; }
   .section { margin-bottom: 36px; }
-  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888; padding-bottom: 8px; border-bottom: 1px solid #e0e0e0; margin-bottom: 4px; }
-  .item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 8px; border-radius: 6px; cursor: pointer; transition: background 0.1s; border-bottom: 1px solid #ebebeb; }
+  .section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #555; padding-bottom: 8px; border-bottom: 1px solid #222; margin-bottom: 4px; }
+  .item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 8px; border-radius: 6px; cursor: pointer; transition: background 0.1s; border-bottom: 1px solid #1a1a1a; }
   .item:last-child { border-bottom: none; }
-  .item:hover { background: #ececec; }
-  .item.done { opacity: 0.45; }
+  .item:hover { background: #141414; }
+  .item.done { opacity: 0.35; }
   .item.done .item-text { text-decoration: line-through; }
-  .cb { width: 18px; height: 18px; border: 1.5px solid #bbb; border-radius: 4px; flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; background: white; }
-  .item.done .cb { background: #111; border-color: #111; }
-  .cb::after { content: ''; display: none; width: 4px; height: 8px; border: 2px solid white; border-top: none; border-left: none; transform: rotate(45deg) translate(-1px, -1px); }
+  .cb { width: 18px; height: 18px; border: 1.5px solid #333; border-radius: 4px; flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; background: #0a0a0a; }
+  .item.done .cb { background: #c8ff00; border-color: #c8ff00; }
+  .cb::after { content: ''; display: none; width: 4px; height: 8px; border: 2px solid #0a0a0a; border-top: none; border-left: none; transform: rotate(45deg) translate(-1px, -1px); }
   .item.done .cb::after { display: block; }
   .item-body { flex: 1; }
-  .item-text { font-size: 14px; font-weight: 500; color: #111; }
-  .item-note { font-size: 12px; color: #888; margin-top: 1px; line-height: 1.5; }
+  .item-text { font-size: 14px; font-weight: 500; color: #e8e8e0; }
+  .item-note { font-size: 12px; color: #555; margin-top: 1px; line-height: 1.5; }
   .tag { display: inline-block; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; text-transform: uppercase; letter-spacing: 0.05em; }
-  .tag-now  { background: #fff0e0; color: #c05000; }
-  .tag-free { background: #e8f5e8; color: #2a7a2a; }
-  .tag-cost { background: #fff0e0; color: #b04000; }
-  .tag-legal { background: #eeeeff; color: #4040bb; }
-  .reset-btn { background: none; border: 1px solid #ccc; color: #888; font-size: 12px; padding: 6px 14px; border-radius: 4px; cursor: pointer; margin-top: 32px; display: block; }
-  .reset-btn:hover { border-color: #888; color: #333; }
+  .tag-now  { background: #2a1500; color: #e05c20; }
+  .tag-free { background: #0a1f0a; color: #4a9a4a; }
+  .tag-cost { background: #2a1500; color: #e05c20; }
+  .tag-legal { background: #0a0a2a; color: #6060cc; }
+  .reset-btn { background: none; border: 1px solid #333; color: #555; font-size: 12px; padding: 6px 14px; border-radius: 4px; cursor: pointer; margin-top: 32px; display: block; }
+  .reset-btn:hover { border-color: #555; color: #888; }
 </style>
 </head>
 <body>
@@ -59,7 +59,7 @@
   <div class="section">
     <div class="section-title">1 · Legal & Business Structure — WC LLC</div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Form LLC at bizfile.sos.ca.gov <span class="tag tag-now">Do First</span></div><div class="item-note">$70 filing fee. 20 min online. Nothing else matters until this is done.</div></div></div>
-    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Get EIN from IRS — fax SS-4 to 855-641-6935 <span class="tag tag-free">Free</span></div><div class="item-note">Fax SS-4 + articles of organization. Cannot do until LLC confirmation email arrives at whcsf.events@gmail.com. Check spam.</div></div></div>
+    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Get EIN from IRS — fax SS-4 to 855-641-6935 <span class="tag tag-free">Free</span></div><div class="item-note">Fax SS-4 + articles of organization. Cannot do until LLC confirmation email arrives at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f88f909b8b9ed69d8e9d968c8bb89f95999194d69b9795">[email&#160;protected]</a>. Check spam.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Open Mercury business bank account <span class="tag tag-free">Free</span></div><div class="item-note">mercury.com — pending EIN. Never mix personal and business money.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Book SF entertainment attorney consult <span class="tag tag-cost">~$300</span></div><div class="item-note">Must happen before any equity is formalized or operating agreement signed.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Draft operating agreement with attorney <span class="tag tag-legal">Legal</span></div><div class="item-note">Equity split, decision process, profit distribution, exit terms. Nothing is binding without this.</div></div></div>
@@ -185,7 +185,7 @@
     <div class="section-title">11 · Digital Infrastructure</div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Confirm Dice.fm promoter account approval <span class="tag tag-free">Free</span></div><div class="item-note">Submitted. Follow up if no response within 7 days. Need this approved before first event ticketing.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up Cloudflare for warehousecollectivellc.com domain <span class="tag tag-free">Free</span></div><div class="item-note">Faster load times, DDoS protection, free SSL. Takes 10 minutes. Go to cloudflare.com, add your domain.</div></div></div>
-    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up whcsf@warehousecollectivellc.com custom email <span class="tag tag-cost">~$6/mo</span></div><div class="item-note">Google Workspace. You need a custom domain email for professional outreach to venues, artists, and investors.</div></div></div>
+    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="54233c37273214233526313c3b212731373b38383137203d22313838377a373b39">[email&#160;protected]</a> custom email <span class="tag tag-cost">~$6/mo</span></div><div class="item-note">Google Workspace. You need a custom domain email for professional outreach to venues, artists, and investors.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Test Brevo email capture on website — send test submission</div><div class="item-note">Confirm emails are landing in Brevo list correctly. Check confirmation email sends properly.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Build Brevo welcome email sequence for new subscribers</div><div class="item-note">At minimum: one welcome email sent immediately on signup. Short, on-brand, includes link to follow on Instagram.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Get Notion Plus free via Berkeley student verification</div><div class="item-note">notion.so/students — verify with berkeley.edu email. Unlocks unlimited blocks. Both Zachary and Arhaan should do this.</div></div></div>
@@ -225,7 +225,7 @@
   <!-- 15. TECHNOLOGY -->
   <div class="section">
     <div class="section-title">15 · Technology & Tools</div>
-    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up Google Workspace custom domain email <span class="tag tag-cost">~$6/mo</span></div><div class="item-note">You need whcsf@warehousecollectivellc.com not Gmail when emailing artists, landlords, and investors.</div></div></div>
+    <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up Google Workspace custom domain email <span class="tag tag-cost">~$6/mo</span></div><div class="item-note">You need <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6a1beb5a5b096a1b7a4b3beb9a3a5b3b5b9babab3b5a2bfa0b3babab5f8b5b9bb">[email&#160;protected]</a> not Gmail when emailing artists, landlords, and investors.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Set up Square or Stripe for door payments <span class="tag tag-free">Free to start</span></div><div class="item-note">For walk-up ticket sales and cash/card at the door. Integrate with ticketing so all sales are tracked in one place.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Download Adobe CC free via Berkeley — software.berkeley.edu <span class="tag tag-free">Free</span></div><div class="item-note">Both Zachary and Arhaan. Photoshop, Illustrator, Premiere. Use Illustrator to finalize the crosshair logo from SVG.</div></div></div>
     <div class="item" onclick="toggle(this)"><div class="cb"></div><div class="item-body"><div class="item-text">Get Figma Education free — figma.com/education <span class="tag tag-free">Free</span></div><div class="item-note">Berkeley email required. Use for logo finalization and brand asset management.</div></div></div>
@@ -258,24 +258,24 @@
   <button class="reset-btn" onclick="resetAll()">Reset all checkboxes</button>
 
   <!-- LAMBO METER -->
-  <div style="margin-top: 48px; padding: 28px 24px; background: white; border-radius: 8px; border: 1px solid #e0e0e0;">
-    <div style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 20px;">Bitches &amp; Lambos Meter</div>
+  <div style="margin-top: 48px; padding: 28px 24px; background: #111; border-radius: 8px; border: 1px solid #222;">
+    <div style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 20px;">Bitches &amp; Lambos Meter</div>
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
       <span style="font-size: 22px; flex-shrink:0;">🚶</span>
-      <div style="flex: 1; height: 22px; background: #f0f0f0; border-radius: 11px; overflow: hidden;">
-        <div id="lambo-fill" style="height: 100%; width: 0%; border-radius: 11px; background: linear-gradient(90deg, #bbb 0%, #555 60%, #111 100%); transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);"></div>
+      <div style="flex: 1; height: 22px; background: #1a1a1a; border-radius: 11px; overflow: hidden;">
+      <div id="lambo-fill" style="height: 100%; width: 0%; border-radius: 11px; background: linear-gradient(90deg, #333 0%, #888 60%, #c8ff00 100%); transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);"></div>
       </div>
       <span style="font-size: 22px; flex-shrink:0;">🏎️</span>
     </div>
     <div style="text-align: center; margin-top: 16px;">
-      <div id="lambo-pct" style="font-size: 42px; font-weight: 700; letter-spacing: -2px; color: #111; line-height: 1;">0%</div>
-      <div id="lambo-status" style="font-size: 14px; color: #888; margin-top: 6px; font-style: italic;">Still broke. Keep going.</div>
+      <div id="lambo-pct" style="font-size: 42px; font-weight: 700; letter-spacing: -2px; color: #c8ff00; line-height: 1;">0%</div>
+      <div id="lambo-status" style="font-size: 14px; color: #555; margin-top: 6px; font-style: italic;">Still broke. Keep going.</div>
     </div>
   </div>
 
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const KEY = 'wc_checklist_v3';
   const STATUSES = [
     [0,   "Still broke. Keep going."],
@@ -323,19 +323,4 @@
     var pct = all ? Math.round(done / all * 100) : 0;
     document.getElementById('fill').style.width = pct + '%';
     document.getElementById('pct').textContent = done + ' / ' + all;
-    document.getElementById('lambo-fill').style.width = pct + '%';
-    document.getElementById('lambo-pct').textContent = pct + '%';
-    var status = STATUSES.slice().reverse().find(function(s) { return pct >= s[0]; });
-    document.getElementById('lambo-status').textContent = status[1];
-  }
-
-  window.onload = function() {
-    var state = load();
-    document.querySelectorAll('.item').forEach(function(el) {
-      if (state[getId(el)]) el.classList.add('done');
-    });
-    updateProgress();
-  };
-</script>
-</body>
-</html>
+    document.getElement
